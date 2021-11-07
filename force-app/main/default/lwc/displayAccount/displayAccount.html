@@ -1,0 +1,20 @@
+<template>
+    <lightning-card variant="Narrow" title=" Account Details " icon-name="standard:account" > 
+        <ul> 
+            <template if:true={response}>
+                <template for:each={accounts.data} for:item="account"> 
+                <li key={account.id}> 
+                    <div class="slds-p-around-medium abc-lg">
+                         <lightning-tile label={account.Name}>
+                         <p class="slds-truncate" title={account.Phone}>{account.phone}</p> 
+                        </lightning-tile> 
+                    </div>
+                 </li> 
+                </template>
+            </template> 
+        </ul> 
+            <p slot="footer">
+                <lightning-badge label="Account Record by Aura Methods"></lightning-badge>
+            </p> 
+    </lightning-card>
+</template>

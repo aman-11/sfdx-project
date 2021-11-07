@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Child To Parent Communication Example1 "></lightning-card>
+    <lightning-card title="Parent Component ">
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                Child Component Value on Parent Component : {data}
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout>
+            <lightning-layout-item  padding="around-small">
+                <c-custom-Child onnewevent={handleCustomEvent}></c-custom-Child>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

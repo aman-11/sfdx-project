@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Create Account">
+                <lightning-input class="slds-p-around_medium" label="Name" name="accoutName" onchange={nameChangedHandler}></lightning-input>
+                <lightning-combobox class="slds-p-around_medium" name="accountRating" label="Rating"  placeholder="Select Rating" options={options} onchange={ratingChangeHandler}></lightning-combobox>
+                <lightning-input class="slds-p-around_medium" label="Account Number" name="accoutNumber" onchange={numberChangedHandler}></lightning-input>
+                <lightning-input class="slds-p-around_medium" label="WebSite" name="accoutWebSite" onchange={websiteChangedHandler} ></lightning-input>
+                <lightning-input class="slds-p-around_medium" label="Phone" type="phone" name="accountPhone" onchange={phoneChangedHandler}></lightning-input>
+                <br/>
+                <lightning-button class="slds-m-left_x-small" label="Create Account" variant="brand" onclick={createAccount}></lightning-button>
+    </lightning-card>
+</template>
